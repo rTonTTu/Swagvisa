@@ -6,4 +6,5 @@ K‰ytt‰jien toiminnot:
 - Mahdollisuus harjoittaa tiet‰myst‰‰n erin‰kˆisiss‰ aiheissa vastailemalla kysymyksiin.
 - Mahdollisuus list‰‰ kysymyksi‰ j‰rjestelm‰‰n joko k‰sin tai tiedostosta lukemalla.
 - Mahdollisuus olla maailman kovin tietovisatyyppi ja n‰ytt‰‰ se muille highscore-listalla.
-
+- K‰ytt‰j‰ voi tunnistautua peliin, jolloin tulokset j‰‰v‰t muistiin.
+- K‰ytt‰j‰ voi valita kysymykset haluamansa kategorian perusteella.
