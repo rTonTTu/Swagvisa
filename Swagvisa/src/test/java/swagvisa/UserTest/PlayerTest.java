@@ -51,10 +51,17 @@ public class PlayerTest {
         assertEquals(rightAnswers, 1);
     }
     
+    @Test
     public void testForCorrectScore() {
         this.user.answeredCorrectly();
         int score = this.user.getScore();
         assertEquals(score, 1);
+    }
+    
+    public void testForIncorrectAnswers() {
+        this.user.answeredIncorrectly();
+        int incorrectAnswers = this.user.getWrongAnswers();
+        assertEquals(incorrectAnswers, 1);
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
