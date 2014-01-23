@@ -36,5 +36,13 @@ public class Statistics {
     public int getWrongAnswers() {
         return this.wrongAnswers;
     }
+    
+    public void answeredCorrectly() {
+        this.score++;
+        this.rightAnswers++;
+    }
 
+    public void answeredIncorrectly() {
+        this.wrongAnswers++;
+    }
 }
