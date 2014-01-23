@@ -1,1 +1,4 @@
 16.01. 1h - Projektin aloittaminen, lisäosien asentelu, tweakkailu
+23.01. 2h - Projektin kirjoittelua, lisätty luokat Player ja Statistics, yhdistetty niiden toimintaa sekä luotu testit niille. Tämän lisäksi raapusteltu suuntaa-antava luokkakaavio harhauttaakseni ohjaajia
+
+kokonaisaika: 3h
