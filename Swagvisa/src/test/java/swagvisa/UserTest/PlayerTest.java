@@ -45,6 +45,27 @@ public class PlayerTest {
 
     
     @Test
+    public void testForCorrecetName() {
+        Player contestant = new Player("Esa");
+        String name = "Esa";
+        assertEquals(name, contestant.getName());
+    }
+    
+    @Test
+    public void testForCorrectTeam1() {
+        Player contestant = new Player("Esa");
+        String team = "Esa";
+        assertEquals(team, contestant.getTeam());
+    }
+    
+    @Test
+    public void testForCorrectTeam2() {
+        Player contestant = new Player("Esa", "Karvaturrit");
+        String team = "Karvaturrit";
+        assertEquals(team, contestant.getTeam());
+    }
+    
+    @Test
     public void testForCorrectAnswers() {
         this.user.answeredCorrectly();
         int rightAnswers = this.user.getRightAnswers();
@@ -58,12 +79,14 @@ public class PlayerTest {
         assertEquals(score, 1);
     }
     
+    @Test
     public void testForIncorrectAnswers() {
         this.user.answeredIncorrectly();
         int incorrectAnswers = this.user.getWrongAnswers();
         assertEquals(incorrectAnswers, 1);
     }
     
+    @Test
     public void testManipulatingTheScoreManualle() {
         this.user.answeredCorrectly();
         this.user.setPoints(5);
