@@ -12,6 +12,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import swagvisa.User.Player;
 
 /**
  *
@@ -19,7 +20,11 @@ import static org.junit.Assert.*;
  */
 public class PlayerTest {
     
+    private Player user;
+    
     public PlayerTest() {
+    this.user = new Player("Tonttu", "esat");
+    
     }
     
     @BeforeClass
@@ -38,6 +43,19 @@ public class PlayerTest {
     public void tearDown() {
     }
 
+    
+    @Test
+    public void testForCorrectAnswers() {
+        this.user.answeredCorrectly();
+        int rightAnswers = this.user.getRightAnswers();
+        assertEquals(rightAnswers, 1);
+    }
+    
+    public void testForCorrectScore() {
+        this.user.answeredCorrectly();
+        int score = this.user.getScore();
+        assertEquals(score, 1);
+    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
