@@ -73,6 +73,14 @@ public class StatisticsTest {
 
         assertEquals(this.stats.getScore(), 2);
     }
+    
+    @Test
+    public void manualFoolingAroundWithScoreWorksProperly() {
+        this.stats.answeredCorrectly();
+        this.stats.setPoints(500);
+        
+        assertEquals(this.stats.getScore(), 500);
+    }
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
