@@ -12,19 +12,22 @@ package swagvisa.User;
  */
 public class Player {
     
-    private String name;
-    private String team;
+    private Statistics stats;
+    private final String name;
+    private final String team;
     
     
     public Player(String name) {
         this.name = name;
         this.team = name;
+        this.stats = new Statistics();
     }
     
     
     public Player(String name, String team) {
     this.name = name;
     this.team = team;
+    this.stats = new Statistics();
         
     }
     
