@@ -35,6 +35,10 @@ public class Player {
     public void answeredIncorrectly() {
         this.stats.answeredIncorrectly();
     }
+    
+     public void setPoints(int points) {
+        this.stats.setPoints(points);
+    }
 
     public int getScore() {
         return this.stats.getScore();

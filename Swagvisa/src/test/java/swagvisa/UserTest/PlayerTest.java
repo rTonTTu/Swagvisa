@@ -63,6 +63,13 @@ public class PlayerTest {
         int incorrectAnswers = this.user.getWrongAnswers();
         assertEquals(incorrectAnswers, 1);
     }
+    
+    public void testManipulatingTheScoreManualle() {
+        this.user.answeredCorrectly();
+        this.user.setPoints(5);
+        int score = this.user.getScore();
+        assertEquals(score, 5);
+    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
