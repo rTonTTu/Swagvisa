@@ -1,17 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package swagvisa.Logic;
 
 import java.util.Scanner;
+import swagvisa.Questions.*;
 
 /**
  *
  * @author TonTTu
  */
-public class Logic {
+public class main {
 
-    private Scanner scanner;
+    public static void main(String args[]) {
 
-    public Logic() {
-        this.scanner = new Scanner(System.in);
+        QuestionList question = new QuestionList();
+        
+        Scanner scanner = new Scanner(System.in);
         String rightAnswer = "Helsinki";
 
         System.out.println("Lets try this out");
@@ -20,10 +27,10 @@ public class Logic {
 
         if (answer.equals(rightAnswer)) {
             System.out.println("righto!");
+
         } else {
             System.out.println("Wrong-oh-ouh");
         }
 
     }
-
 }
