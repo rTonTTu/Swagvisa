@@ -17,20 +17,7 @@ public class main {
     public static void main(String args[]) {
 
         QuestionList question = new QuestionList();
-        question.addQuestion("What is the capital of your country?", "Helsinki", "Turku", "Tampere");
-        
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println();
-        
-        String answer = scanner.nextLine();
-
-        if (answer.equals(rightAnswer)) {
-            System.out.println("righto!");
-
-        } else {
-            System.out.println("Wrong-oh-ouh");
-        }
+        question.addQuestion("Finland", "Helsinki");
 
     }
 }
