@@ -15,6 +15,8 @@ public class QuestionObject {
     String right;
     String wrong1;
     String wrong2;
+    String question;
+    
     
     public QuestionObject(String right) {
         this.right = right;
@@ -22,7 +24,8 @@ public class QuestionObject {
         this.wrong2 = "Woot woot?";
     }
     
-        public QuestionObject(String right, String wrong1, String wrong2) {
+        public QuestionObject(String question, String right, String wrong1, String wrong2) {
+        this.question = question;
         this.right = right;
         this.wrong1 = wrong1;
         this.wrong2 = wrong2;

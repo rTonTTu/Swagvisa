@@ -17,12 +17,12 @@ public class main {
     public static void main(String args[]) {
 
         QuestionList question = new QuestionList();
+        question.addQuestion("What is the capital of your country?", "Helsinki", "Turku", "Tampere");
         
         Scanner scanner = new Scanner(System.in);
-        String rightAnswer = "Helsinki";
-
-        System.out.println("Lets try this out");
-        System.out.println("What is the capital of your country?");
+        
+        System.out.println();
+        
         String answer = scanner.nextLine();
 
         if (answer.equals(rightAnswer)) {

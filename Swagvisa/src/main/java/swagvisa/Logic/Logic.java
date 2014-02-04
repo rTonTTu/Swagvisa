@@ -1,6 +1,8 @@
 package swagvisa.Logic;
 
+import java.util.Random;
 import java.util.Scanner;
+import swagvisa.Questions.QuestionObject;
 
 /**
  *
@@ -9,6 +11,7 @@ import java.util.Scanner;
 public class Logic {
 
     private Scanner scanner;
+    private Random randomGenerator;
 
     public Logic() {
         this.scanner = new Scanner(System.in);
@@ -26,4 +29,10 @@ public class Logic {
 
     }
 
+    
+     public void ask() {
+        int index = randomGenerator.nextInt(this.questionsList.size());
+        QuestionObject quiz = this.questionsList.get(index);
+        System.out.println(quiz.question);
+    }
 }

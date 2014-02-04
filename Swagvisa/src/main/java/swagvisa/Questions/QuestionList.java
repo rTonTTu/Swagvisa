@@ -6,6 +6,7 @@
 package swagvisa.Questions;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -14,17 +15,21 @@ import java.util.ArrayList;
 public class QuestionList {
 
     private ArrayList<QuestionObject> questionsList;
+    private Random randomGenerator;
 
     public QuestionList() {
         this.questionsList = new ArrayList<QuestionObject>();
+
     }
 
     public void addQuestion(String answer) {
         this.questionsList.add(new QuestionObject(answer));
     }
 
-    public void addQuestion(String answer, String wrong1, String wrong2) {
-        this.questionsList.add(new QuestionObject(answer, wrong1, wrong2));
+    public void addQuestion(String question, String answer, String wrong1, String wrong2) {
+        this.questionsList.add(new QuestionObject(question, answer, wrong1, wrong2));
     }
+
+   
 
 }
