@@ -13,10 +13,18 @@ import java.util.ArrayList;
  */
 public class QuestionList {
 
-    private ArrayList<QuestionObject> question;
+    private ArrayList<QuestionObject> questionsList;
 
     public QuestionList() {
-        this.question = new ArrayList<QuestionObject>();
+        this.questionsList = new ArrayList<QuestionObject>();
+    }
+
+    public void addQuestion(String answer) {
+        this.questionsList.add(new QuestionObject(answer));
+    }
+
+    public void addQuestion(String answer, String wrong1, String wrong2) {
+        this.questionsList.add(new QuestionObject(answer, wrong1, wrong2));
     }
 
 }
