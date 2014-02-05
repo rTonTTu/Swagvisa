@@ -1,4 +1,7 @@
 16.01. 1h - Projektin aloittaminen, lisäosien asentelu, tweakkailu
 23.01. 2h - Projektin kirjoittelua, lisätty luokat Player ja Statistics, yhdistetty niiden toimintaa sekä luotu testit niille. Tämän lisäksi raapusteltu suuntaa-antava luokkakaavio harhauttaakseni ohjaajia
+03.02. 3h - Projektin sotkemista, aivotyöskentelyä paperin kanssa, muutaman luokan lisäilyä ja kovakooditestaamista. Käytännöllistä kehitystä tapahtunut huomattavasti vähemmän kuin oletettu.
+05.02. 4h - Aivotyöskentelyä luennon aikana, piirrustelua, idean boottaamisen harkitsemista ja pöydän putsaamisen suunnittelua. Projektin tämänhetkinen ongelma on liian monimutkainen lähestymistapa, jonka voisi korjata putsaamalla suurimman osan ja aloittamalla pienillä moveilla.
 
-kokonaisaika: 3h
+
+kokonaisaika: 10h
