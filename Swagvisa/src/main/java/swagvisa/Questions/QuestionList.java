@@ -22,13 +22,11 @@ public class QuestionList {
 
     }
 
-    public void addQuestion(String answer) {
-        this.questionsList.add(new QuestionObject(answer));
+    public void addQuestion(String country, String capital) {
+        this.questionsList.add(new QuestionObject(country, capital));
     }
-
-    public void addQuestion(String question, String answer, String wrong1, String wrong2) {
-        this.questionsList.add(new QuestionObject(question, answer, wrong1, wrong2));
-    }
+    
+  
 
    
 

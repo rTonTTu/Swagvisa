@@ -1,6 +1,5 @@
 package swagvisa.Logic;
 
-import java.util.Random;
 import java.util.Scanner;
 import swagvisa.Questions.QuestionObject;
 
@@ -11,17 +10,18 @@ import swagvisa.Questions.QuestionObject;
 public class Logic {
 
     private Scanner scanner;
-    private Random randomGenerator;
 
     public Logic() {
         this.scanner = new Scanner(System.in);
-        String rightAnswer = "Helsinki";
+
+        QuestionObject testi = new QuestionObject("Finland", "Helsinki");
 
         System.out.println("Lets try this out");
-        System.out.println("What is the capital of your country?");
+        System.out.println("What is the capital of" + testi.getCountry());
+        System.out.println(testi.getCapital() + " " + testi.getWrong1() + " " + testi.getWrong2() + " " + testi.getCountry());
         String answer = scanner.nextLine();
 
-        if (answer.equals(rightAnswer)) {
+        if (answer.equals(testi.getCapital())) {
             System.out.println("righto!");
         } else {
             System.out.println("Wrong-oh-ouh");
@@ -29,10 +29,4 @@ public class Logic {
 
     }
 
-    
-     public void ask() {
-        int index = randomGenerator.nextInt(this.questionsList.size());
-        QuestionObject quiz = this.questionsList.get(index);
-        System.out.println(quiz.question);
-    }
 }

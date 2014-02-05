@@ -32,8 +32,26 @@ public class QuestionObject {
     public QuestionObject(String country, String capital) {
         this.country = country;
         this.capital = capital;
+        this.wrongAnswersList = new ArrayList<String>();
+        randomizeWrongAnswers();
     }
 
+    public String getCapital() {
+        return this.capital;
+    }
+    
+    public String getCountry() {
+        return this.country;
+    }
+    
+    public String getWrong1() {
+        return this.wrong1;
+    }
+    
+    public String getWrong2() {
+        return this.wrong2;
+    }
+    
     public void setWrong1(String answer) {
         this.wrong1 = answer;
     }
