@@ -1,10 +1,27 @@
+Iteraatio 1.0
+
 Aihe: Tietovisa
 
 K‰ytt‰j‰t: Kaikki
 
 K‰ytt‰jien toiminnot:
+
 - Mahdollisuus harjoittaa tiet‰myst‰‰n erin‰kˆisiss‰ aiheissa vastailemalla kysymyksiin.
 - Mahdollisuus list‰‰ kysymyksi‰ j‰rjestelm‰‰n joko k‰sin tai tiedostosta lukemalla.
 - Mahdollisuus olla maailman kovin tietovisatyyppi ja n‰ytt‰‰ se muille highscore-listalla.
 - K‰ytt‰j‰ voi tunnistautua peliin, jolloin tulokset j‰‰v‰t muistiin.
 - K‰ytt‰j‰ voi valita kysymykset haluamansa kategorian perusteella.
+
+Iteraatio 1.1
+
+Aihe: Tietovisa
+
+K‰ytt‰j‰t: Kaikki
+
+K‰ytt‰jien toiminnot:
+
+- Mahdollisuus harjoittaa tiet‰myst‰‰n erin‰kˆisiss‰ aiheissa vastailemalla kysymyksiin.
+- Mahdollisuus list‰‰ kysymyksi‰ j‰rjestelm‰‰n joko k‰sin tai tiedostosta lukemalla.
+- Mahdollisuus olla maailman kovin tietovisatyyppi ja n‰ytt‰‰ se muille highscore-listalla.
+- K‰ytt‰j‰ voi tunnistautua peliin, jolloin tulokset j‰‰v‰t muistiin.
+- Pelin kysymykset alustavasti fixatusta aihepiirist‰, tavoitteena mahdollisesti laajentaa lukijalla, johon voisi k‰sin tehd‰ kysymykset.
