@@ -3,5 +3,7 @@
 03.02. 3h - Projektin sotkemista, aivotyöskentelyä paperin kanssa, muutaman luokan lisäilyä ja kovakooditestaamista. Käytännöllistä kehitystä tapahtunut huomattavasti vähemmän kuin oletettu.
 05.02. 4h - Aivotyöskentelyä luennon aikana, piirrustelua, idean boottaamisen harkitsemista ja pöydän putsaamisen suunnittelua. Projektin tämänhetkinen ongelma on liian monimutkainen lähestymistapa, jonka voisi korjata putsaamalla suurimman osan ja aloittamalla pienillä moveilla.
 08.02. 1h - Lekalla refaktoroitu, prosessia otettu taaksepäin väkisin turhan monimutkaisuuden takia, jonka yhteydessä aloitettu uudestaan puolittain puhtaalta pöydältä. Pelaaja ja pisteluokka säilytetty toistaiseksi, sillä ne hoitavat oman tehtävänsä oletettavasti tarpeeksi hyvin.
+08.02. 1h - Kirjoitettu mainiin yksinkertainen tapa toteuttaa tehtävä jonka yhteydessä rakennettu fiksumman oloinen kysymysluokka. 
 
-kokonaisaika: 10h
+
+kokonaisaika: 12h
