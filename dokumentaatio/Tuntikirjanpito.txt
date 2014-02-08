@@ -4,6 +4,6 @@
 05.02. 4h - Aivotyöskentelyä luennon aikana, piirrustelua, idean boottaamisen harkitsemista ja pöydän putsaamisen suunnittelua. Projektin tämänhetkinen ongelma on liian monimutkainen lähestymistapa, jonka voisi korjata putsaamalla suurimman osan ja aloittamalla pienillä moveilla.
 08.02. 1h - Lekalla refaktoroitu, prosessia otettu taaksepäin väkisin turhan monimutkaisuuden takia, jonka yhteydessä aloitettu uudestaan puolittain puhtaalta pöydältä. Pelaaja ja pisteluokka säilytetty toistaiseksi, sillä ne hoitavat oman tehtävänsä oletettavasti tarpeeksi hyvin.
 08.02. 1h - Kirjoitettu mainiin yksinkertainen tapa toteuttaa tehtävä jonka yhteydessä rakennettu fiksumman oloinen kysymysluokka. 
+08.02. 45min - Luotu päivitetty luokkakaavio sekä kolmesta eri tapauksesta sekvenssikaaviot.
 
-
-kokonaisaika: 12h
+kokonaisaika: 12h 45min
