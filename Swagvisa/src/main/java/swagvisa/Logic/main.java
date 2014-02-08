@@ -6,7 +6,7 @@
 package swagvisa.Logic;
 
 import java.util.Scanner;
-import swagvisa.Questions.*;
+
 
 /**
  *
@@ -16,8 +16,6 @@ public class main {
 
     public static void main(String args[]) {
 
-        QuestionList question = new QuestionList();
-        question.addQuestion("Finland", "Helsinki");
 
     }
 }
