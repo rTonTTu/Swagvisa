@@ -6,21 +6,37 @@
 package swagvisa.User;
 
 /**
+ * Luokka rakentaa pelaaja-olion jolla voidaan seurata tuloksia sekä tietoja
+ * pelaajan toimista pelin sisällä.
  *
  * @author TonTTu
  */
 public class Player {
 
+    
     private Statistics stats;
     private final String name;
     private final String team;
 
+    /**
+     * Konstruktori jossa luodaan pelaajalle olio käyttäen parametrina annettua
+     * Stringiä nimenä pelaajalle. Samassa luodaan pisteenlasku pelaajalle.
+     *
+     * @param name
+     */
     public Player(String name) {
         this.name = name;
         this.team = name;
         this.stats = new Statistics();
     }
 
+    /**
+     * Konstruktori jossa luodaan pelaajalle olio käyttäen parametreinä
+     * annettuja Stringejä pelaajan nimenä sekä joukkueen nimenä. . Samassa
+     * luodaan pisteenlasku pelaajalle.
+     *
+     * @param name
+     */
     public Player(String name, String team) {
         this.name = name;
         this.team = team;
@@ -35,8 +51,8 @@ public class Player {
     public void answeredIncorrectly() {
         this.stats.answeredIncorrectly();
     }
-    
-     public void setPoints(int points) {
+
+    public void setPoints(int points) {
         this.stats.setPoints(points);
     }
 
@@ -58,6 +74,10 @@ public class Player {
 
     public String getTeam() {
         return this.team;
+    }
+
+    public String toString() {
+        return this.name + ", " + this.team + ". Points: " + getScore();
     }
 
 }
