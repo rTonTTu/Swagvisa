@@ -42,21 +42,25 @@ public class QuestionList {
         this.questions.put(11, new Question("Aitoa_menoa", "The truth."));
         this.questions.put(12, new Question("Mötö", "Not again /__\'"));
         this.questions.put(13, new Question("Simobot", "Needs a boot"));
+        this.questions.put(14, new Question("cobu", "A sort of dive into annoying success featuring way too many blankets"));
+        this.questions.put(15, new Question("Zyklon Pi", "The greatest tale of a fearless babushka"));
+        this.questions.put(16, new Question("Gashunk", "The sound that a shark makes when it crashes through a door in a public toilet"));
+        this.questions.put(17, new Question("hhhehehe", "A type of lizard"));
     }
 
     public void QuestionRandomizer() {
         Random rand = new Random();
-        this.questionOne = rand.nextInt(this.questions.size()+1);
+        this.questionOne = rand.nextInt(this.questions.size() + 1);
         while (true) {
-            int randomNumber = rand.nextInt(this.questions.size()+1);
+            int randomNumber = rand.nextInt(this.questions.size() + 1);
             if (randomNumber != this.questionOne) {
                 this.questionTwo = randomNumber;
                 break;
             }
         }
-        
+
         while (true) {
-            int randomNumber = rand.nextInt(this.questions.size()+1);
+            int randomNumber = rand.nextInt(this.questions.size() + 1);
             if (randomNumber != this.questionOne || randomNumber != this.questionTwo) {
                 this.questionThree = randomNumber;
                 break;
