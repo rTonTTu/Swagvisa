@@ -22,15 +22,24 @@ import swagvisa.Questions.Question;
 public class QuestionList {
 
     private Map<Integer, Question> questions;
-    private int questionOne;
-    private int questionTwo;
-    private int questionThree;
+    private int randomNumberOne;
+    private int randomNumberTwo;
+    private int randomNumberThree;
+    private Question questionOne;
+    private Question questionTwo;
+    private Question questionThree;
 
     /**
      * Konstruktori jossa alustetaan hashmappi ja luodaan kysymykset listaan.
      */
     public QuestionList() {
         this.questions = new HashMap<>();
+        this.questionOne = null;
+        this.questionTwo = null;
+        this.questionThree = null;
+        this.randomNumberOne = 1;
+        this.randomNumberTwo = 2;
+        this.randomNumberThree = 3;
         addQuestions();
     }
 
@@ -60,28 +69,31 @@ public class QuestionList {
     }
 
     /**
-     * Metodi luo listasta satunnaiset kysymykset pitäen huolen ettei kyseistä kysymystä ole useampaan kertaan kyselyssä.
+     * Metodi luo listasta satunnaiset kysymykset pitäen huolen ettei kyseistä
+     * kysymystä ole useampaan kertaan kyselyssä. Tämän jälkeen ne alustetaan valmiiksi kysymyksiksi.
      */
-    
     public void QuestionRandomizer() {
         Random rand = new Random();
-        this.questionOne = rand.nextInt(this.questions.size() + 1);
+        this.randomNumberOne = rand.nextInt(this.questions.size() + 1);
         while (true) {
             int randomNumber = rand.nextInt(this.questions.size() + 1);
-            if (randomNumber != this.questionOne) {
-                this.questionTwo = randomNumber;
+            if (randomNumber != this.randomNumberOne) {
+                this.randomNumberTwo = randomNumber;
                 break;
             }
         }
 
         while (true) {
             int randomNumber = rand.nextInt(this.questions.size() + 1);
-            if (randomNumber != this.questionOne || randomNumber != this.questionTwo) {
-                this.questionThree = randomNumber;
+            if (randomNumber != this.randomNumberOne || randomNumber != this.randomNumberTwo) {
+                this.randomNumberThree = randomNumber;
                 break;
             }
         }
 
+        this.questionOne = this.questions.get(this.randomNumberOne);
+        this.questionTwo = this.questions.get(this.randomNumberTwo);
+        this.questionThree = this.questions.get(this.randomNumberThree);
     }
 
 }
