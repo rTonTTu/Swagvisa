@@ -58,6 +58,15 @@ public class QuestionListTest {
         assertNotNull(comparableThree);
     }
     
+    @Test
+    public void MakeSureTheQuestionsArentNull() {
+        Question comparableOne = questionList.getQuestionOne();
+        Question comparableTwo = questionList.getQuestionTwo();
+        Question comparableThree = questionList.getQuestionThree();
+        assertNotNull(comparableOne);
+        assertNotNull(comparableTwo);
+        assertNotNull(comparableThree);        
+    }
     
 
     // TODO add test methods here.
