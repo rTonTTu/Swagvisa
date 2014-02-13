@@ -37,9 +37,6 @@ public class QuestionList {
         this.questionOne = null;
         this.questionTwo = null;
         this.questionThree = null;
-        this.randomNumberOne = 1;
-        this.randomNumberTwo = 2;
-        this.randomNumberThree = 3;
         addQuestions();
     }
 
@@ -70,7 +67,8 @@ public class QuestionList {
 
     /**
      * Metodi luo listasta satunnaiset kysymykset pitäen huolen ettei kyseistä
-     * kysymystä ole useampaan kertaan kyselyssä. Tämän jälkeen ne alustetaan valmiiksi kysymyksiksi.
+     * kysymystä ole useampaan kertaan kyselyssä. Tämän jälkeen ne alustetaan
+     * valmiiksi kysymyksiksi.
      */
     public void QuestionRandomizer() {
         Random rand = new Random();
@@ -90,10 +88,33 @@ public class QuestionList {
                 break;
             }
         }
-
         this.questionOne = this.questions.get(this.randomNumberOne);
         this.questionTwo = this.questions.get(this.randomNumberTwo);
         this.questionThree = this.questions.get(this.randomNumberThree);
+    }
+
+    public Question getQuestionOne() {
+        return this.questionOne;
+    }
+
+    public Question getQuestionTwo() {
+        return this.questionTwo;
+    }
+
+    public Question getQuestionThree() {
+        return this.questionThree;
+    }
+
+    public int getRandomNumberOne() {
+        return randomNumberOne;
+    }
+
+    public int getRandomNumberTwo() {
+        return randomNumberTwo;
+    }
+
+    public int getRandomNumberThree() {
+        return randomNumberThree;
     }
 
 }
