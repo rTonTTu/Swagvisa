@@ -5,5 +5,8 @@
 08.02. 1h - Lekalla refaktoroitu, prosessia otettu taaksep‰in v‰kisin turhan monimutkaisuuden takia, jonka yhteydess‰ aloitettu uudestaan puolittain puhtaalta pˆyd‰lt‰. Pelaaja ja pisteluokka s‰ilytetty toistaiseksi, sill‰ ne hoitavat oman teht‰v‰ns‰ oletettavasti tarpeeksi hyvin.
 08.02. 1h - Kirjoitettu mainiin yksinkertainen tapa toteuttaa teht‰v‰ jonka yhteydess‰ rakennettu fiksumman oloinen kysymysluokka. 
 08.02. 45min - Luotu p‰ivitetty luokkakaavio sek‰ kolmesta eri tapauksesta sekvenssikaaviot.
+13.02. 3h - Luotu kysymyksille listausluokka joka luo kysymykset ja jokaisella kerralla tekee niist√§ 3 valittua kysymyst√§ jotka eiv√§t ole samoja. Samalla luotu testit sek√§ javadoc luokalle
 
-kokonaisaika: 12h 45min
+
+
+kokonaisaika: 15h 45min
