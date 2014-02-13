@@ -13,6 +13,9 @@ import java.util.Random;
 import swagvisa.Questions.Question;
 
 /**
+ * Luokan tehtävänä listata kysymykset helpompaan muotoon, josta pelilogiikka
+ * voi ensin ne satunnaisesti luoda ja sen jälkeen vertailla/manipuloida
+ * halutessaan
  *
  * @author thomasto@cs
  */
@@ -23,11 +26,19 @@ public class QuestionList {
     private int questionTwo;
     private int questionThree;
 
+    /**
+     * Konstruktori jossa alustetaan hashmappi ja luodaan kysymykset listaan.
+     */
     public QuestionList() {
         this.questions = new HashMap<>();
         addQuestions();
     }
 
+    /**
+     * Metodi joka lisää mappiin kysymykset peliä varten. Kysymykset valitaan
+     * satunnaisesti listasta numeron perusteella, jonka jälkeen vertaillaan
+     * lyhenteitä ja selityksiä
+     */
     public void addQuestions() {
         this.questions.put(1, new Question("Swag", "Fashionable appearance which sways people"));
         this.questions.put(2, new Question("Jäbä", "A multipurpose word like 'dude'"));
@@ -48,6 +59,10 @@ public class QuestionList {
         this.questions.put(17, new Question("hhhehehe", "A type of lizard"));
     }
 
+    /**
+     * Metodi luo listasta satunnaiset kysymykset pitäen huolen ettei kyseistä kysymystä ole useampaan kertaan kyselyssä.
+     */
+    
     public void QuestionRandomizer() {
         Random rand = new Random();
         this.questionOne = rand.nextInt(this.questions.size() + 1);
