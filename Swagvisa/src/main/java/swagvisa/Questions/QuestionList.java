@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import swagvisa.Questions.Question;
 
 /**
@@ -18,6 +19,9 @@ import swagvisa.Questions.Question;
 public class QuestionList {
 
     private Map<Integer, Question> questions;
+    private int questionOne;
+    private int questionTwo;
+    private int questionThree;
 
     public QuestionList() {
         this.questions = new HashMap<>();
@@ -39,7 +43,26 @@ public class QuestionList {
         this.questions.put(12, new Question("Mötö", "Not again /__\'"));
         this.questions.put(13, new Question("Simobot", "Needs a boot"));
     }
-    
-    
+
+    public void QuestionRandomizer() {
+        Random rand = new Random();
+        this.questionOne = rand.nextInt(this.questions.size()+1);
+        while (true) {
+            int randomNumber = rand.nextInt(this.questions.size()+1);
+            if (randomNumber != this.questionOne) {
+                this.questionTwo = randomNumber;
+                break;
+            }
+        }
+        
+        while (true) {
+            int randomNumber = rand.nextInt(this.questions.size()+1);
+            if (randomNumber != this.questionOne || randomNumber != this.questionTwo) {
+                this.questionThree = randomNumber;
+                break;
+            }
+        }
+
+    }
 
 }
