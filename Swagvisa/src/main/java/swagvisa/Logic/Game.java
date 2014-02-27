@@ -19,7 +19,7 @@ public class Game {
     private String rightAnswer;
     private String answer;
 
-    public Game(String playerName, String playerTeam, int maxQuestions) {
+    public Game(String playerName, String playerTeam) {
         this.maxQuestions = maxQuestions;
         this.player = new Player(playerName, playerTeam);
         

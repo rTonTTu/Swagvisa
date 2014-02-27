@@ -6,16 +6,18 @@
 
 package swagvisa.GUI;
 
+import swagvisa.Logic.Game;
+
 /**
  *
  * @author thomasto
  */
-public class InterfaceMenu extends javax.swing.JFrame {
+public class GUI extends javax.swing.JFrame {
 
     /**
      * Creates new form GUI
      */
-    public InterfaceMenu() {
+    public GUI() {
         initComponents();
     }
 
@@ -28,40 +30,40 @@ public class InterfaceMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        WelcomeText = new javax.swing.JLabel();
+        Statement = new javax.swing.JLabel();
+        PlayerName = new javax.swing.JLabel();
+        TeamName = new javax.swing.JLabel();
+        Questions = new javax.swing.JLabel();
+        PlayerField = new javax.swing.JTextField();
+        QuestionField = new javax.swing.JTextField();
+        TeamField = new javax.swing.JTextField();
+        ReadyButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Swagvisa");
 
-        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        jLabel1.setText("Welcome to Swagvisa! ");
+        WelcomeText.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        WelcomeText.setText("Welcome to Swagvisa! ");
 
-        jLabel2.setText("Please state your player name, team and number of questions");
+        Statement.setText("Please state your player name, team and number of questions");
 
-        jLabel3.setText("Player name:");
+        PlayerName.setText("Player name:");
 
-        jLabel4.setText("Team name:");
+        TeamName.setText("Team name:");
 
-        jLabel5.setText("Questions:");
+        Questions.setText("Questions:");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        TeamField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                TeamFieldActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Ready");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ReadyButton.setText("Ready");
+        ReadyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ReadyButtonActionPerformed(evt);
             }
         });
 
@@ -73,18 +75,18 @@ public class InterfaceMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(QuestionField, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addComponent(ReadyButton))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(WelcomeText)
+                            .addComponent(Statement)
+                            .addComponent(PlayerName)
+                            .addComponent(TeamName)
+                            .addComponent(Questions)
+                            .addComponent(PlayerField, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TeamField, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -92,36 +94,38 @@ public class InterfaceMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(WelcomeText)
                 .addGap(39, 39, 39)
-                .addComponent(jLabel2)
+                .addComponent(Statement)
                 .addGap(59, 59, 59)
-                .addComponent(jLabel3)
+                .addComponent(PlayerName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PlayerField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
-                .addComponent(jLabel4)
+                .addComponent(TeamName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TeamField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
-                .addComponent(jLabel5)
+                .addComponent(Questions)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(QuestionField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(ReadyButton)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void TeamFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TeamFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_TeamFieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void ReadyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadyButtonActionPerformed
+        System.out.println("Tästä napista siirrytään peliin");        
+        Game game = new Game(this.PlayerField.getText(), this.TeamField.getText());
+        System.out.println(this.PlayerField.getText() + this.TeamField.getText());
+    }//GEN-LAST:event_ReadyButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,33 +144,33 @@ public class InterfaceMenu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InterfaceMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InterfaceMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InterfaceMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InterfaceMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InterfaceMenu().setVisible(true);
+                new GUI().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField PlayerField;
+    private javax.swing.JLabel PlayerName;
+    private javax.swing.JTextField QuestionField;
+    private javax.swing.JLabel Questions;
+    private javax.swing.JButton ReadyButton;
+    private javax.swing.JLabel Statement;
+    private javax.swing.JTextField TeamField;
+    private javax.swing.JLabel TeamName;
+    private javax.swing.JLabel WelcomeText;
     // End of variables declaration//GEN-END:variables
 }
