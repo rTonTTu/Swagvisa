@@ -38,6 +38,7 @@ public class QuestionList {
         this.questionTwo = null;
         this.questionThree = null;
         addQuestions();
+        QuestionRandomizer();;
     }
 
     /**
