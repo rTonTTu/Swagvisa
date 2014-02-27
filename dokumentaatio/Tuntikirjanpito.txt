@@ -6,7 +6,7 @@
 08.02. 1h - Kirjoitettu mainiin yksinkertainen tapa toteuttaa teht�v� jonka yhteydess� rakennettu fiksumman oloinen kysymysluokka. 
 08.02. 45min - Luotu p�ivitetty luokkakaavio sek� kolmesta eri tapauksesta sekvenssikaaviot.
 13.02. 3h - Luotu kysymyksille listausluokka joka luo kysymykset ja jokaisella kerralla tekee niistä 3 valittua kysymystä jotka eivät ole samoja. Samalla luotu testit sekä javadoc luokalle
+27.02. 5h - Graafisen käyttöliittymän rakentamista, luotu menukuva ja jonkinsortin kyselypohja. Tämän lisäksi sommailtu jonkinnäköistä kyselylogiikkaa.
 
 
-
-kokonaisaika: 15h 45min
+kokonaisaika: 20h 45min
