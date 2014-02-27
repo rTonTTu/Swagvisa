@@ -36,7 +36,7 @@ public class GameInterface implements Runnable {
     }
 
     private void createComponents(Container container) {
-        container.add(new JTextArea());
+        container.add(new JTextArea("Testi"));
         container.add(createPanel(), BorderLayout.SOUTH);
     }
 
