@@ -22,15 +22,13 @@ public class Game {
     public Game(String playerName, String playerTeam) {
         this.maxQuestions = maxQuestions;
         this.player = new Player(playerName, playerTeam);
-        
+
     }
 
     public void Ask() {
         QuestionList questions = new QuestionList();
         this.rightAnswer = questions.getQuestionOne().getAbbreviation();
-        
-        
-        
+
         if (this.answer.equals(this.rightAnswer)) {
             this.player.answeredCorrectly();
 

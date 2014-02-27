@@ -39,8 +39,8 @@
                           <Component id="PlayerName" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="TeamName" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="Questions" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="PlayerField" alignment="0" min="-2" pref="183" max="-2" attributes="0"/>
                           <Component id="TeamField" alignment="0" min="-2" pref="183" max="-2" attributes="0"/>
+                          <Component id="PlayerField" alignment="0" min="-2" pref="183" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -68,7 +68,7 @@
               <Component id="Questions" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="QuestionField" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="9" max="32767" attributes="0"/>
               <Component id="ReadyButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
