@@ -15,23 +15,29 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.WindowConstants;
 
-/**
- *
- * @author Tonttulap
+/** 
+ * Luokassa tehdään graafinen käyttöliittymä jossa piirretään tekstikenttä jonne kysymykset ilmestyvät
+ * sekä sen lisäksi 3 vastausvaihtoehtoa nappien muodossa, joita pelaaja painelee.
+ * 
  */
 public class UserInterface implements Runnable {
 
+    private int numberOfQuestions;
+    private String playerName;
+    private String teamName;
     private JFrame frame;
 
+    
+    /**
+     * Graafisen osan käynnistävä metodi.
+     */
+    
     @Override
     public void run() {
         frame = new JFrame("Swagvisa");
-        frame.setPreferredSize(new Dimension(1024, 240));
-
+        frame.setPreferredSize(new Dimension(800, 120));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
         createComponents(frame.getContentPane());
-
         frame.pack();
         frame.setVisible(true);
     }

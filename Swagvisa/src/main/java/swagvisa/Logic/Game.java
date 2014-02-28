@@ -26,18 +26,17 @@ public class Game {
 
     }
 
+    
+    /**
+     * Metodissa kysytään pelaajalta kysymys ja riippuen vastauksesta annetaan pelaajalle joko yksi 
+     * piste oikeasta vastauksesta tai ei yhtään pistettä väärästä vastauksesta. Tämän jälkeen 
+     * tulokset päivitetään pelaajan tilastoihin.
+     */
     public void ask() {
-        Random random = new Random();
-        int randomNumber = random.nextInt(3)+1;
-        QuestionList questions = new QuestionList();        
-        
+        QuestionList questions = new QuestionList();
         this.rightAnswer = questions.getQuestion1().getAbbreviation();
-        
-        
-        
         if (this.answer.equals(this.rightAnswer)) {
             this.player.answeredCorrectly();
-
         } else {
             this.player.answeredIncorrectly();
         }

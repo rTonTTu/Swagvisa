@@ -43,7 +43,6 @@ public class QuestionList {
         addQuestions();
         QuestionRandomizer();;
         readyQuestions();
-
     }
 
     /**
@@ -100,6 +99,11 @@ public class QuestionList {
         this.questionThree = this.questions.get(this.randomNumberThree);
     }
 
+    /*
+    Metodi lisää kysymykset valmiiseen listaan, josta ne haetaan erikseen sitten itse ajotilanteessa. 
+    Tämän yhteyteen on myös lisätty shuffle joka sekoittaa kysymysten paikan itse vastausnapeissa.
+    */
+    
     public void readyQuestions() {
         this.readyQuestions.add(questionOne);
         this.readyQuestions.add(questionTwo);
