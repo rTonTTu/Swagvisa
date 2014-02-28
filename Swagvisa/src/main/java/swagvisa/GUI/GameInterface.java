@@ -36,17 +36,19 @@ public class GameInterface implements Runnable {
     }
 
     private void createComponents(Container container) {
-        container.add(new JTextArea("Testi"));
+        container.add(new JTextArea("Tähän tulee kysymys ja kolme vaihtoehtoa alle tulostettuna, vaihtoehtona "
+                + "jotka näkyvät omalla vastausvaihtoehdollaan napin tekstissä. Shouldn't bee that hard"));
         container.add(createPanel(), BorderLayout.SOUTH);
     }
 
     private JPanel createPanel() {
         JPanel panel = new JPanel(new GridLayout(1, 3));
-        panel.add(new JButton("A"));
-        panel.add(new JButton("B"));
-        panel.add(new JButton("C"));
+        panel.add(new JButton("Vaihtoehto A"));
+        panel.add(new JButton("Vaihtoehto B"));
+        panel.add(new JButton("Vaihtoehto C"));
         return panel;
     }
+    
 
     public JFrame getFrame() {
         return frame;
