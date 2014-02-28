@@ -106,6 +106,7 @@ public class QuestionList {
     */
     
     public void readyQuestions() {
+        this.readyQuestions.clear();
         this.readyQuestions.add(questionOne);
         this.readyQuestions.add(questionTwo);
         this.readyQuestions.add(questionThree);

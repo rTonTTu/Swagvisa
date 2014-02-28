@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
 import swagvisa.Questions.Question;
 import swagvisa.User.Player;
 import swagvisa.GUI.UserInterface;
+import swagvisa.Logic.Game;
 
 /**
  *
@@ -18,8 +19,9 @@ import swagvisa.GUI.UserInterface;
 public class main {
 
     public static void main(String args[]) {
-        
-        UserInterface ui = new UserInterface();
+        Game g = new Game();
+        UserInterface ui = new UserInterface(g);
         SwingUtilities.invokeLater(ui);
+        
     }
 }

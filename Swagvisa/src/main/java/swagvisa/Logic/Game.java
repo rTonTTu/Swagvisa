@@ -36,15 +36,16 @@ public class Game {
      * pelaajalle joko yksi piste oikeasta vastauksesta tai ei yhtään pistettä
      * väärästä vastauksesta. Tämän jälkeen tulokset päivitetään pelaajan
      * tilastoihin.
+     * @return tehty kysymyslista
      */
-    public void ask() {
-
+    
+    public QuestionList ask() {
         QuestionList questions = new QuestionList();
         this.rightAnswer = questions.getQuestion1().getAbbreviation();
-        if (this.answer.equals(this.rightAnswer)) {
-            this.player.answeredCorrectly();
-        } else {
-            this.player.answeredIncorrectly();
-        }
+        return questions;
+    }
+    
+    public boolean answer(String answer) {
+        return this.rightAnswer.equals(answer);
     }
 }
