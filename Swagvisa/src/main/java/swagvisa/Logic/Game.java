@@ -10,6 +10,9 @@ import swagvisa.Questions.QuestionList;
 import swagvisa.User.Player;
 
 /**
+ * Pelilogiikka jonka pohjalta peliä oikeasti pelataan. Luokasta löytyvällä
+ * ask() metodilla kysytään pelaajalta kysymyksiä, jotka on määritelty
+ * konstrutktorin kautta.
  *
  * @author TonTTu
  */
@@ -20,18 +23,22 @@ public class Game {
     private String rightAnswer;
     private String answer;
 
+    /*
+     Konstruktori pelillogiikalle, jossa määritellään pelaajan tiedot sekä 
+     kysymysten määrä, jotka tullaan pelissä kysymään.
+     */
     public Game() {
         this.maxQuestions = 10;
         this.player = new Player("Pelaaja 1");
-
     }
 
-    
     /**
-     * Metodissa kysytään pelaajalta kysymys ja riippuen vastauksesta annetaan pelaajalle joko yksi 
-     * piste oikeasta vastauksesta tai ei yhtään pistettä väärästä vastauksesta. Tämän jälkeen 
-     * tulokset päivitetään pelaajan tilastoihin.
+     * Metodissa kysytään pelaajalta kysymys ja riippuen vastauksesta annetaan
+     * pelaajalle joko yksi piste oikeasta vastauksesta tai ei yhtään pistettä
+     * väärästä vastauksesta. Tämän jälkeen tulokset päivitetään pelaajan
+     * tilastoihin.
      */
+    
     public void ask() {
         QuestionList questions = new QuestionList();
         this.rightAnswer = questions.getQuestion1().getAbbreviation();
