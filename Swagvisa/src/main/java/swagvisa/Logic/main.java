@@ -8,7 +8,7 @@ package swagvisa.Logic;
 import java.util.Scanner;
 import swagvisa.Questions.Question;
 import swagvisa.User.Player;
-
+ 
 /**
  *
  * @author TonTTu
