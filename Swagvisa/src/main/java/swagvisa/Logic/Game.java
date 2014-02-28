@@ -26,7 +26,7 @@ public class Game {
 
     }
 
-    public void Ask() {
+    public void ask() {
         Random random = new Random();
         int randomNumber = random.nextInt(3)+1;
         QuestionList questions = new QuestionList();        

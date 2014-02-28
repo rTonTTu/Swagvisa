@@ -6,6 +6,7 @@
 package swagvisa.Questions;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,17 +29,21 @@ public class QuestionList {
     private Question questionOne;
     private Question questionTwo;
     private Question questionThree;
+    private ArrayList<Question> readyQuestions;
 
     /**
      * Konstruktori jossa alustetaan hashmappi ja luodaan kysymykset listaan.
      */
     public QuestionList() {
+        this.readyQuestions = new ArrayList<Question>();
         this.questions = new HashMap<>();
         this.questionOne = null;
         this.questionTwo = null;
         this.questionThree = null;
         addQuestions();
         QuestionRandomizer();;
+        readyQuestions();
+
     }
 
     /**
@@ -47,6 +52,7 @@ public class QuestionList {
      * lyhenteitä ja selityksiä
      */
     public void addQuestions() {
+
         this.questions.put(1, new Question("Swag", "Fashionable appearance which sways people"));
         this.questions.put(2, new Question("Jäbä", "A multipurpose word like 'dude'"));
         this.questions.put(3, new Question("Jäbätär", "A multipurpose word like 'dude' except for women"));
@@ -94,6 +100,13 @@ public class QuestionList {
         this.questionThree = this.questions.get(this.randomNumberThree);
     }
 
+    public void readyQuestions() {
+        this.readyQuestions.add(questionOne);
+        this.readyQuestions.add(questionTwo);
+        this.readyQuestions.add(questionThree);
+        Collections.shuffle(this.readyQuestions);
+    }
+
     public Question getQuestion1() {
         return this.questionOne;
     }
@@ -116,6 +129,10 @@ public class QuestionList {
 
     public int getRandomNumberThree() {
         return randomNumberThree;
+    }
+
+    public ArrayList getQuestions() {
+        return this.readyQuestions;
     }
 
 }
