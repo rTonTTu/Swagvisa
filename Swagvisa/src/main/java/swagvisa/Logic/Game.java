@@ -5,6 +5,7 @@
  */
 package swagvisa.Logic;
 
+import java.util.Random;
 import swagvisa.Questions.QuestionList;
 import swagvisa.User.Player;
 
@@ -26,9 +27,14 @@ public class Game {
     }
 
     public void Ask() {
-        QuestionList questions = new QuestionList();
-        this.rightAnswer = questions.getQuestionOne().getAbbreviation();
-
+        Random random = new Random();
+        int randomNumber = random.nextInt(3)+1;
+        QuestionList questions = new QuestionList();        
+        
+        this.rightAnswer = questions.getQuestion1().getAbbreviation();
+        
+        
+        
         if (this.answer.equals(this.rightAnswer)) {
             this.player.answeredCorrectly();
 

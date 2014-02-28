@@ -94,15 +94,15 @@ public class QuestionList {
         this.questionThree = this.questions.get(this.randomNumberThree);
     }
 
-    public Question getQuestionOne() {
+    public Question getQuestion1() {
         return this.questionOne;
     }
 
-    public Question getQuestionTwo() {
+    public Question getQuestion2() {
         return this.questionTwo;
     }
 
-    public Question getQuestionThree() {
+    public Question getQuestion3() {
         return this.questionThree;
     }
 

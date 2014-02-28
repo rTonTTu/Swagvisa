@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package swagvisa.Logic;
+package swagvisa.GUI;
 
 import java.util.Scanner;
+import javax.swing.SwingUtilities;
 import swagvisa.Questions.Question;
 import swagvisa.User.Player;
- 
+import swagvisa.GUI.UserInterface;
+
 /**
  *
  * @author TonTTu
@@ -16,6 +18,7 @@ import swagvisa.User.Player;
 public class main {
 
     public static void main(String args[]) {
-
+        UserInterface ui = new UserInterface();
+        SwingUtilities.invokeLater(ui);
     }
 }

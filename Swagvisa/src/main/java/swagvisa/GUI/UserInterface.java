@@ -1,13 +1,13 @@
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package swagvisa.GUI;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,17 +15,18 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.WindowConstants;
 
-public class GameInterface implements Runnable {
+/**
+ *
+ * @author Tonttulap
+ */
+public class UserInterface implements Runnable {
 
     private JFrame frame;
-
-    public GameInterface() {
-    }
 
     @Override
     public void run() {
         frame = new JFrame("Swagvisa");
-        frame.setPreferredSize(new Dimension(640, 480));
+        frame.setPreferredSize(new Dimension(1024, 240));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,7 +49,6 @@ public class GameInterface implements Runnable {
         panel.add(new JButton("Vaihtoehto C"));
         return panel;
     }
-    
 
     public JFrame getFrame() {
         return frame;
