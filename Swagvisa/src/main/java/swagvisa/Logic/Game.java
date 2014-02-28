@@ -17,7 +17,6 @@ import swagvisa.User.Player;
  * @author TonTTu
  */
 public class Game {
-
     private int maxQuestions;
     private Player player;
     private String rightAnswer;
@@ -38,8 +37,8 @@ public class Game {
      * väärästä vastauksesta. Tämän jälkeen tulokset päivitetään pelaajan
      * tilastoihin.
      */
-    
     public void ask() {
+
         QuestionList questions = new QuestionList();
         this.rightAnswer = questions.getQuestion1().getAbbreviation();
         if (this.answer.equals(this.rightAnswer)) {
@@ -47,6 +46,5 @@ public class Game {
         } else {
             this.player.answeredIncorrectly();
         }
-
     }
 }

@@ -60,9 +60,9 @@ public class QuestionListTest {
     
     @Test
     public void MakeSureTheQuestionsArentNull() {
-        Question comparableOne = questionList.getQuestionOne();
-        Question comparableTwo = questionList.getQuestionTwo();
-        Question comparableThree = questionList.getQuestionThree();
+        Question comparableOne = questionList.getQuestion1();
+        Question comparableTwo = questionList.getQuestion2();
+        Question comparableThree = questionList.getQuestion3();
         assertNotNull(comparableOne);
         assertNotNull(comparableTwo);
         assertNotNull(comparableThree);        
