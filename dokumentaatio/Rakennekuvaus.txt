@@ -1,0 +1,17 @@
+Projektin rakenne oli huomattavasti pienempi kuin oli alkuperäisesti 
+suunniteltu. 
+
+Projektin sisällössä oli Pelaaja ja statistiikkaluokka,
+joiden tarkoituksena on pitää pelaajan nimeä ja itse tuloksi, jotka
+saatiin vastailemalla kysymyksiin.
+
+Kysymykset koostuvat itse Kysymys-olioista jotka listataan Kysymys-
+lista-olion avulla. Kysymyslista-luokka valitsi listasta aina 3 
+kysymystä, laittoi ne listaan ja sekoitti, jonka jälkeen ne toimitettiin
+pelilogiilalle.
+
+Pelilogiikka luokka aloittaa pelin, antaa käyttöliittymälle pyynnöstä
+kysymykset, jotka pidetään napeissa näkyvillä. Kun käyttöliittymästä
+annetaan napinpainallus oikeasta vastauksesta, ilmoittaa käyttöliittymä
+siitä pelilogiikalle, joka vaihtoehtoisesti ilmoittaa pelaajalle, oliko
+vastaus oikein vai väärin. 

@@ -33,7 +33,7 @@ public class QuestionList {
     private ArrayList<Question> readyQuestions;
 
     /**
-     * Konstruktori jossa alustetaan hashmappi ja luodaan kysymykset listaan.
+     * Konstruktori jossa alustetaan hashmappi, valmiiden kysymysten lista sekä luodaan kysymykset listaan.
      */
     public QuestionList() {
         this.readyQuestions = new ArrayList<Question>();

@@ -1,0 +1,10 @@
+Peli on hyvin suoraviivainen. Ruudun yläreunassa annetaan englanniksi 
+sanan selitys, josta on olemassa lyhennys myös. Alarivistä löytyy kolme
+painiketta, joista löytyy eri vaihtoehdot vastauksiin. Painamalla oikeaa
+nappia, peli antaa joko pisteen tai ilmoittaa että olet antantut väärän
+vastauksen, jolloin peli jatkuu.
+
+Peliä voi jatkaa loputtomiin, vaikkakin kysymyksiä on rajoitettu määrä.
+
+2.0 versioon tulossa: 	Highscoret, muokattavat kysymykset tiedostosta, 
+aloitus-menu.

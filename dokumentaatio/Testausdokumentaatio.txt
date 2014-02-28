@@ -1,0 +1,22 @@
+Ohjelman testauksessa käytetyissä yksikkötesteissä aloitettiin
+yksinkertaisten luokkien testauksesta, hyvä tahti saavutettiin ja
+player sekä statistics luokat saatiin toimiviksi testien osalta.
+Tästä jatkettuna question myös toimi kivasti sekä QuestionList, kunnes
+ennen palautusta alkoi melkoinen taistelurumba, jonka yhteydessä tuli
+lisättyä huomattava määrä tavaraa kyseiseen luokkaan. Itseaiheutettujen
+aikatauluongelmien vuoksi niin uudet questionlist-luokan testit kuin
+myös Game sekä UnitInterfacen osalta olevat testit jäivät myös tekemättä,
+sillä tärkeämmäksi koettiin silloin saada peli edes pelattavaksi ja 
+myös toimivaksi. 
+
+Tavoitteena oli pitää huoli siitä että kysymyslistat eivät falskaisi,
+toisi päällekkäisiä kysymyksiä tai antaisi null-arvoja listoihin.
+
+Gamessä olisi pitänyt tarkastaa ask metodin toimintaa tarkemmin, sillä
+sen toiminta on hyvin tärkeää ohjelman osalta.
+
+Unitinterfacen tärkeimpiin kuuluviin metodeihin oli itse tarkastus, jossa
+pop-up ikkuna hyppää ja päivittää tuloksia, jonka lisäksi myös jatkuvasti
+refresh-metodia kutsuttaessa tulisi pitää huoli, että kysymykset tosiaan
+tulisivat loppuun asti. Valitettavasti tähän ei ehditty.
+
