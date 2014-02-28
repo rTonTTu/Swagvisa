@@ -8,5 +8,7 @@
 13.02. 3h - Luotu kysymyksille listausluokka joka luo kysymykset ja jokaisella kerralla tekee niistä 3 valittua kysymystä jotka eivät ole samoja. Samalla luotu testit sekä javadoc luokalle
 27.02. 5h - Graafisen käyttöliittymän rakentamista, luotu menukuva ja jonkinsortin kyselypohja. Tämän lisäksi sommailtu jonkinnäköistä kyselylogiikkaa.
 28.02. 2h - Graafisen k�lin refaktorointi, toiminnallisuuden takominen peltipurkin l�pi v�kisin.
+28.02. 1h - Pelilogiikan korjailua ja kysymyslistaluokan viilailsua
 
-kokonaisaika: 22h 45min
+
+kokonaisaika: 23h 45min
