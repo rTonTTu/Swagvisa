@@ -28,7 +28,7 @@ public class Game {
      */
     public Game() {
         this.maxQuestions = 10;
-        this.player = new Player("Pelaaja 1");
+        this.player = new Player("Player 1");
     }
 
     /**
@@ -45,7 +45,16 @@ public class Game {
         return questions;
     }
     
+    /*
+    Metodi joka tarkastaa onko itse kysymys oikea vai väärä.
+    */
+    
     public boolean answer(String answer) {
+        
         return this.rightAnswer.equals(answer);
+    }
+    
+    public Player getPlayer() {
+        return this.player;
     }
 }

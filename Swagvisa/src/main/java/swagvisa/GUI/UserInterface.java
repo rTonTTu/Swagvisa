@@ -21,6 +21,7 @@ import javax.swing.WindowConstants;
 import swagvisa.Logic.Game;
 import swagvisa.Questions.Question;
 import swagvisa.Questions.QuestionList;
+import swagvisa.User.Player;
 
 /**
  * Luokassa tehdään graafinen käyttöliittymä jossa piirretään tekstikenttä jonne
@@ -30,6 +31,7 @@ import swagvisa.Questions.QuestionList;
  */
 public class UserInterface implements Runnable {
 
+    private Player player;
     private int numberOfQuestions;
     private String playerName;
     private String teamName;
@@ -38,15 +40,15 @@ public class UserInterface implements Runnable {
     private JButton buttonA;
     private JButton buttonB;
     private JButton buttonC;
-    
-    private Game g;
+    private Game game;
 
-    public UserInterface(Game g) {
-        this.g = g;
+    public UserInterface(Game game) {
+        this.game = game;
     }
-    
+
     /**
-     * Graafisen osan käynnistävä metodi.
+     * Graafisen osan käynnistävä metodi joka samalla päivittää ruutua refresh()
+     * metodin avulla.
      */
     @Override
     public void run() {
@@ -59,7 +61,12 @@ public class UserInterface implements Runnable {
         refresh();
     }
 
+    /*
+     * Komponenttien luoja jonka sisälle rakennettu äärimmäisen rumasti actionlistener, tulisi refaktoroida siistimmäksi (/TODO) 
+     * mutta aikataulut ovat tiukat.
+     */
     private void createComponents(Container container) {
+        this.player = new Player("Your stats");
         this.questionArea = new JTextArea();
         this.buttonA = new JButton();
         this.buttonB = new JButton();
@@ -67,13 +74,14 @@ public class UserInterface implements Runnable {
         ActionListener kuuntelija = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String message;
-                if(g.answer(((JButton)e.getSource()).getText())) {
-                    message = "Oikein!";
+                if (game.answer(((JButton) e.getSource()).getText())) {
+                    game.getPlayer().answeredCorrectly();
+                    message = "Right!";
+                } else {
+                    game.getPlayer().answeredIncorrectly();
+                    message = "Wrong!";
                 }
-                else {
-                    message = "Väärin!";
-                }
-                JOptionPane.showMessageDialog((JButton)e.getSource(), message);
+                JOptionPane.showMessageDialog((JButton) e.getSource(), message);
                 refresh();
             }
         };
@@ -92,9 +100,12 @@ public class UserInterface implements Runnable {
         return panel;
     }
 
+    /*
+     Metodi päivittää ruudun uusilla kysymyksilä ja samalla kertoo pistetilanteen.
+     */
     private void refresh() {
-        QuestionList list = g.ask();
-        questionArea.setText(list.getQuestion1().getDefinition());
+        QuestionList list = game.ask();
+        questionArea.setText(list.getQuestion1().getDefinition() + "\n" + "\n" + game.getPlayer().toString());
         ArrayList<Question> options = list.getQuestions();
         buttonA.setText(options.get(0).getAbbreviation());
         buttonB.setText(options.get(1).getAbbreviation());

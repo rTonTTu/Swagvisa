@@ -77,7 +77,10 @@ public class Player {
     }
 
     public String toString() {
-        return this.name + ", " + this.team + ". Points: " + getScore();
+        return this.name + ", " + this.team + ". Points: " + getScore() 
+                +" Correct/Incorrect answers: " 
+                + this.getRightAnswers() 
+                + "/" + this.getWrongAnswers();
     }
 
 }
